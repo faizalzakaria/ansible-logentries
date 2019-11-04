@@ -11,3 +11,6 @@ logentries_apt_repositories:
 
 logentries_apt_keys:
   - { id: C43C79AD,  keyserver: "pgp.mit.edu" }
+
+logentries_template_file:
+  - config.j2

@@ -44,7 +44,7 @@
   when: logentries_set_key is defined
 
 - name: Add logentries config
-  template: src=config.j2 dest=/etc/le/config mode=640 owner=root group=root
+  template: src={{ logentries_template_file }} dest=/etc/le/config mode=640 owner=root group=root
   when: logentries_set_key is defined
   notify:
   - Restart logentries
